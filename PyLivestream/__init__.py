@@ -238,7 +238,7 @@ class Stream:
             vid1 += ['-offset_x',self.origin[0],'-offset_y',self.origin[1],
                      '-i', self.videochan,]
         elif sys.platform == 'darwin':
-            pass  # FIXME: verify
+            vid1 += ['-i',"0:0"]
 
         return vid1
 
